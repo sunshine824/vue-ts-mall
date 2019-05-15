@@ -20,7 +20,9 @@
 import { Component, Watch, Vue } from "vue-property-decorator";
 import { State, Action } from "vuex-class";
 
-@Component
+@Component({
+  name:'Shops'
+})
 export default class Shops extends Vue {
   @Action getShops: () => void;
   @State shops: StoreState.shop[];

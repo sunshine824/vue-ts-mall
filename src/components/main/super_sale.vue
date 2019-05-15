@@ -20,7 +20,9 @@
 import {Component, Vue} from "vue-property-decorator";
 import { State } from "vuex-class";
 
-@Component
+@Component({
+  name:'superSale'
+})
 export default class SuperSale extends Vue {
   @State superSales: StoreState.superSale[];
 }

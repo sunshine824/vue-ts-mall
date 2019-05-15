@@ -12,7 +12,9 @@
 import {Component, Vue} from 'vue-property-decorator'
 import { Action } from "vuex-class";
 
-@Component
+@Component({
+  name:'Header'
+})
 export default class Header extends Vue {
   @Action setSearchVal: (val: string) => void;
   searchValue: string = "";

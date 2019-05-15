@@ -14,7 +14,9 @@
 import {Component, Vue} from "vue-property-decorator";
 import { State } from "vuex-class";
 
-@Component
+@Component({
+  name:'Board'
+})
 export default class Board extends Vue {
   @State activities: StoreState.activity[];
 }
