@@ -2,6 +2,7 @@ import { ActionTree } from 'vuex'
 import { post } from '../public/js/fetch'
 import TYPES from './types'
 import { StreamState } from 'http2';
+import { stat } from 'fs';
 
 const actions: ActionTree<any, any> = {
   //初始化请求
@@ -10,7 +11,7 @@ const actions: ActionTree<any, any> = {
     let p2: any = dispatch('getHeadLines')
     let p3: any = dispatch('getActivity')
     let p4: any = dispatch('getSuperSale')
-    let p5: any = dispatch('getShops')
+    let p5: any = dispatch('getShops', { params: { page: 1, pageSize: 10 } })
 
     //当所有请求成功之后再执行
     Promise.all([p2, p3, p4, p5]).then(res => {
@@ -47,9 +48,13 @@ const actions: ActionTree<any, any> = {
   },
 
   //获取商品列表
-  async getShops({ state, commit }) {
-    const searchVal: string = state.searchVal
-    const res: any = await post('/shops', { searchVal})
+  async getShops({ state, commit }, args: any) {
+    const { params, isPush } = args
+    const res: any = await post('/shops', params)
+    if (isPush) { //往原数据追加
+      const shops = state.shops.data.concat(res.data.data)
+      res.data.data = shops
+    }
     if (res && res.code == 200) commit(TYPES.SET_SHOPS, res.data)
   },
 

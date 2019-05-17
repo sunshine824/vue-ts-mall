@@ -6,6 +6,9 @@ import axios from 'axios'
 import store from './store'
 import router from './router/index'
 import VueLazyload from 'vue-lazyload'
+import Vant from 'vant';
+
+import 'vant/lib/index.css';
 import './mock'
 
 Vue.config.productionTip = false
@@ -13,6 +16,7 @@ Vue.config.productionTip = false
 Vue.prototype.$http = axios
 
 Vue.use(VueLazyload, { preLoad: 1 })
+Vue.use(Vant)
 
 /* eslint-disable no-new */
 new Vue({

@@ -2,51 +2,61 @@ export default {
   'list': [
     [
       {
+        'id': 1,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fm.dianping.com%2Fshoplist%2F1%2Fd%2F1%2Fc%2F10%2Fs%2Fs_-1%3Ffrom%3Dm_nav_1_meishi&schema=dianping%3A%2F%2Ffoodmain%3Fcategoryid%3D10%26utm%3Dulink_meishi%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20160126194705meishi.png',
         'name': '美食'
       },
       {
+        'id': 2,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fm.maoyan.com%3Ffrom%3Dm_nav_2_maoyandianying&schema=dianping%3A%2F%2Fmoviemain%3Ftab%3D0%26utm%3Dulink_maoyandianying%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20170223152109dp_wx_maoyan_icon.png',
         'name': '猫眼电影'
       },
       {
+        'id': 3,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fm.dianping.com%2Fawp%2Fh5%2Fhotel-dp%2Flist%2Flist.html%3Fcityid%3D1%26from%3Dm_nav_3_jiudian&schema=dianping%3A%2F%2Fhotellist%3Futm%3Dulink_jiudian%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20160126203337jiudian.png',
         'name': '酒店'
       },
       {
+        'id': 4,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fm.dianping.com%2Fplay%2Fmain%2Findex%3Ffrom%3Dm_nav_4_xiuxianyule&schema=dianping%3A%2F%2Fweb%3Fnotitlebar%3D1%26url%3Dhttps%253A%252F%252Fm.dianping.com%252Fplay%252Fmain%252Findex%253Fcityid%253D*%2526latitude%253D*%2526longitude%253D*%2526dpid%253D*%2526utm%253Dxiuxianyule%26utm%3Dulink_xiuxianyule%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20160126202841xiuxianyule.png',
         'name': '休闲娱乐'
       },
       {
+        'id': 5,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Ftakeaway.dianping.com%2Fwaimai%2Fnewm%3Ffrom%3Dm_nav_5_waimai&schema=dianping%3A%2F%2Ftakeawayshoplist%3Ftab%3D1%26utm%3Dulink_waimai%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20160126203251waimai.png',
         'name': '外卖'
       },
       {
+        'id': 6,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fm.dianping.com%2Fshoplist%2F1%2Fd%2F1%2Fc%2F110%2Fs%2Fs_-1%3Ffrom%3Dm_nav_6_huoguo&schema=dianping%3A%2F%2Flocalshoplist%3Fcategoryid%3D110%26utm%3Dulink_huoguo%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20160204172927huoguo.png',
         'name': '火锅'
       },
       {
+        'id': 7,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fm.dianping.com%2Fbeauty%2Fnode%2Fhtml%2Fdpindex.html%3Fcityid%3D1%26from%3Dm_nav_7_liren&schema=dianping%3A%2F%2Fcomplexweb%3Furl%3Dhttp%253A%252F%252Fevt.dianping.com%252Fchannel%252Fbeauty%252Findex.html%253Fcityid%253D!%2526longitude%253D*%2526latitude%253D*%2526token%253D*%26utm%3Dulink_liren%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20160126202946liren.png',
         'name': '丽人'
       },
       {
+        'id': 8,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fm.dianping.com%2Fshopping%2Findex%3Ffrom%3Dm_nav_8_gouwu&schema=dianping%3A%2F%2Fweb%3Fnotitlebar%3Dtrue%26url%3Dhttp%253A%252F%252Fm.dianping.com%252Fshopping%252Findex%253Fcityid%253D%2521%2526latitude%253D%252A%2526longitude%253D%252A%2526h5Title%253Dhide%26utm%3Dulink_gouwu%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20160314121215icongouwu135.png',
         'name': '购物'
       },
       {
+        'id': 9,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fi.meituan.com%2Ftrip%2Flvyou%2Ftriplist%2Fpoi%2F%3Flimit%3D40%26offset%3D0%26sort%3Dsmart%26cateId%3D195%26selectedCityId%3D1%26ste%3D_bdpiother%26source%3Ddp%26from%3Dm_nav_9_zhoubianyou&schema=dianping%3A%2F%2Ftravel_poi_list%3Ffrom%3Dscene%26cateid%3D1%26travelcallapp%3Dtravelcallapptravel_poi_list%26utm%3Dulink_zhoubianyou%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20160126203440zhoubianyou.png',
         'name': '周边游'
       },
       {
+        'id': 10,
         'url': '//link.dianping.com/universal-link?originalUrl=https%3A%2F%2Fm.dianping.com%2Fshoplist%2F1%2Fd%2F1%2Fc%2F135%2Fs%2Fs_-1%3Ffrom%3Dm_nav_10_KTV&schema=dianping%3A%2F%2Fktvshoplist%3Fcategoryid%3D135%26utm%3Dulink_KTV%3Adefault%3ASafari%3Am',
         'imgUrl': '//www.dpfile.com/sc/eleconfig/20160126203542ktv.png',
         'name': 'KTV'

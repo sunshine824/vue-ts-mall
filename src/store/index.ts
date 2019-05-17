@@ -11,23 +11,24 @@ const debug = process.env.NODE_ENV !== 'production'
 
 interface State {
   slides: StoreState.slides[],
-  searchVal:string,
-  headlines:StoreState.headlines[],
+  searchVal: string,
+  headlines: StoreState.headlines[],
   activities: StoreState.activity[],
   superSales: StoreState.superSale[],
-  shops: StoreState.shop[],
-  load:boolean
-
+  shops: StoreState.result,
+  load: boolean
 }
 
 const state: State = {
   slides: [],
-  headlines:[],
+  headlines: [],
   activities: [],
   superSales: [],
-  shops: [],
-  searchVal:'',
-  load:false
+  shops: {
+    data: []
+  },
+  searchVal: '',
+  load: false
 }
 
 export default new Vuex.Store({

@@ -21,8 +21,8 @@ declare namespace StoreState {
     url: string
   }
 
-   // 活动特惠
-   export interface activity {
+  // 活动特惠
+  export interface activity {
     // 活动标题
     title: string,
     // 活动描述
@@ -63,6 +63,21 @@ declare namespace StoreState {
     price_old: number,
     // 已售
     sale_count: string
+  }
+
+  export interface result {
+    //数据列表
+    data: shop[],
+    //当前页
+    page?: number,
+    //每页显示条数
+    pageSize?: number,
+    //总页数
+    pages?: number,
+    //数据总数
+    totals?: number,
+    //是否还有下一页
+    hasNextPage?: boolean
   }
 
 }
